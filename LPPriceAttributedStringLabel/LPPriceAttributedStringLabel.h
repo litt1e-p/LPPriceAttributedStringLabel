@@ -10,6 +10,7 @@
 typedef NS_ENUM(NSInteger, LPMoneyType)
 {
     LPMoneyTypeUSD,
+    LPMoneyTypeEUR,
     LPMoneyTypeCNY
 };
 

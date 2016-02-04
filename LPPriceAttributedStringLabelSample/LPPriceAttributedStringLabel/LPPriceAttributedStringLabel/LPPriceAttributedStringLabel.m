@@ -9,15 +9,16 @@
 
 @implementation LPPriceAttributedStringLabel
 
-static NSString *kMoneyTypeCNYStr = @"¥";
+static NSString *kMoneyTypeEURStr = @"€";
 static NSString *kMoneyTypeUSDStr = @"$";
+static NSString *kMoneyTypeCNYStr = @"¥";
 
 - (void)setText:(NSString *)text
 {
     if (!text) {
         return;
     }
-    NSString *textPrefix = self.moneyType == LPMoneyTypeCNY ? kMoneyTypeCNYStr : kMoneyTypeUSDStr;
+    NSString *textPrefix = self.moneyType == LPMoneyTypeCNY ? kMoneyTypeCNYStr : (self.moneyType == LPMoneyTypeEUR ? kMoneyTypeEURStr : kMoneyTypeUSDStr);
     NSMutableAttributedString *aStr = [[NSMutableAttributedString alloc] initWithString:textPrefix];
     [aStr addAttributes:@{
                           NSFontAttributeName : self.moneyTypeStringFont,
