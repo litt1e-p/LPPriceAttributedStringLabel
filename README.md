@@ -17,7 +17,7 @@ just download & drag into your prj
 ```swift
     LPPriceAttributedStringLabel *al1 = [[LPPriceAttributedStringLabel alloc] init];
     al1.frame                         = CGRectMake(50, 200, self.view.frame.size.width, 50);
-    al1.moneyType                     = LPMoneyTypeUSD;//USD / EUR / CNY
+    al1.moneyType                     = LPMoneyTypeUSD;//USD / EUR / CNY / GRP
     al1.integerStringFont             = [UIFont systemFontOfSize:30.f];
     al1.decimalStringFont             = [UIFont systemFontOfSize:18.f];
     al1.integerStringFontColor        = [UIColor redColor];
