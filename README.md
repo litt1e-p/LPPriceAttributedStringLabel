@@ -1,6 +1,17 @@
 # LPPriceAttributedStringLabel
 price with attributedString format util
 
+# Install
+- `use cocoapods`
+```swift
+pod 'LPPriceAttributedStringLabel', '~> 1.0.0'
+```
+``
+- `manual`
+```swift
+just download & drag into your prj
+```
+
 # Usage
 `Lots of properties for custom follow the sample prj or source code`
 ```swift
