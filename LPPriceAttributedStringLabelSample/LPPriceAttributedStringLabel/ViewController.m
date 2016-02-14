@@ -42,7 +42,7 @@
     
     LPPriceAttributedStringLabel *al3 = [[LPPriceAttributedStringLabel alloc] init];
     al3.frame                         = CGRectMake(150, 280, self.view.frame.size.width, 50);
-    al3.moneyType                     = LPMoneyTypeCNY;
+    al3.moneyType                     = LPMoneyTypeGRP;
     al3.integerStringFont             = [UIFont systemFontOfSize:35.f];
     al3.decimalStringFont             = [UIFont systemFontOfSize:22.f];
     al3.integerStringFontColor        = [UIColor purpleColor];

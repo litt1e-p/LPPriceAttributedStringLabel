@@ -1,5 +1,5 @@
 //
-//  YSPriceAttributedStringLabel.m
+//  LPPriceAttributedStringLabel.m
 //
 //  Created by  litt1e-p on 16/2/1.
 //  Copyright © 2016年 litt1e-p. All rights reserved.
@@ -12,13 +12,14 @@
 static NSString *kMoneyTypeEURStr = @"€";
 static NSString *kMoneyTypeUSDStr = @"$";
 static NSString *kMoneyTypeCNYStr = @"¥";
+static NSString *kMoneyTypeGBPStr = @"£";
 
 - (void)setText:(NSString *)text
 {
     if (!text) {
         return;
     }
-    NSString *textPrefix = self.moneyType == LPMoneyTypeCNY ? kMoneyTypeCNYStr : (self.moneyType == LPMoneyTypeEUR ? kMoneyTypeEURStr : kMoneyTypeUSDStr);
+    NSString *textPrefix = self.moneyType == LPMoneyTypeCNY ? kMoneyTypeCNYStr : (self.moneyType == LPMoneyTypeEUR ? kMoneyTypeEURStr : (self.moneyType == LPMoneyTypeUSD ? kMoneyTypeUSDStr : kMoneyTypeGBPStr));
     NSMutableAttributedString *aStr = [[NSMutableAttributedString alloc] initWithString:textPrefix];
     [aStr addAttributes:@{
                           NSFontAttributeName : self.moneyTypeStringFont,

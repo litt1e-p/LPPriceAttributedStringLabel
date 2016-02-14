@@ -1,5 +1,5 @@
 //
-//  YSPriceAttributedStringLabel.h
+//  LPPriceAttributedStringLabel.h
 //
 //  Created by  litt1e-p on 16/2/1.
 //  Copyright © 2016年 litt1e-p . All rights reserved.
@@ -11,7 +11,8 @@ typedef NS_ENUM(NSInteger, LPMoneyType)
 {
     LPMoneyTypeUSD,
     LPMoneyTypeEUR,
-    LPMoneyTypeCNY
+    LPMoneyTypeCNY,
+    LPMoneyTypeGRP,
 };
 
 @interface LPPriceAttributedStringLabel : UILabel
