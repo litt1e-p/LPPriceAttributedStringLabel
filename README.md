@@ -6,7 +6,7 @@ price with attributedString format util for some money type include /USD / EUR /
 ```swift
 pod 'LPPriceAttributedStringLabel', '~> 1.0.0'
 ```
-``
+
 - `manual`
 ```swift
 just download & drag into your prj
