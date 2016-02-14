@@ -1,5 +1,5 @@
 # LPPriceAttributedStringLabel
-price with attributedString format util
+price with attributedString format util for some money type include /USD / EUR / CNY / GRP
 
 # Install
 - `use cocoapods`
