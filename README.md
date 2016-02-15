@@ -31,6 +31,11 @@ just download & drag into your prj
 <img src="screenshot.png" width="320">
 
 # Update
+
 - v1.0.1
-add Great Britain Pound money type
+
+    add Great Britain Pound money type
+
 - v1.0.0
+
+    origin source
