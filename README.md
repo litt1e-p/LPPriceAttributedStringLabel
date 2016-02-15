@@ -4,7 +4,7 @@ price with attributedString format util for some money type include /USD / EUR /
 # Install
 - `use cocoapods`
 ```swift
-pod 'LPPriceAttributedStringLabel', '~> 1.0.0'
+pod 'LPPriceAttributedStringLabel', '~> 1.0.1'
 ```
 
 - `manual`
